@@ -1,0 +1,71 @@
+{% extends 'social/layout.html' %}
+{% block content %}
+
+<!-- Profile -->
+<div class="profile">
+	<img src="{{user.profile.image.url}}">
+	<h2>@{{user.username}}</h2>
+	
+</div>
+
+<!-- Follow items -->
+<div class="follow">
+	<div>
+		<h5>Saldo</h5>
+		{% if saldo %}
+		<div><img  src="/media/coincase.png">{{saldo}}</div>
+		{% endif %}
+	</div>
+	
+</div>
+<div class="medallones-container" style="/* width: 200px; */background-color: #fafafa;
+border: 2px solid #ccc;
+padding: 0 3rem;
+margin: 3rem;">
+<div class="container-article">
+	<img src="{{user.profile.dep1.url}}">
+	<img src="{{user.profile.dep2.url}}">
+	<img src="{{user.profile.dep3.url}}">
+	<img src="{{user.profile.dep4.url}}">
+
+	<img src="{{user.profile.dep5.url}}">
+	<img src="{{user.profile.dep6.url}}">
+	<img src="{{user.profile.dep7.url}}">
+	<img src="{{user.profile.dep8.url}}">
+</div>
+<div class="container-article">
+	<img src="{{user.profile.dep9.url}}">
+	<img src="{{user.profile.dep10.url}}">
+	<img src="{{user.profile.dep11.url}}">
+	<img src="{{user.profile.dep12.url}}">
+
+	<img src="{{user.profile.dep13.url}}">
+	<img src="{{user.profile.dep14.url}}">
+	<img src="{{user.profile.dep15.url}}">
+	<img src="{{user.profile.dep16.url}}">
+</div>
+<div class="container-article">
+	<img src="{{user.profile.dep17.url}}">
+	<img src="{{user.profile.dep18.url}}">
+	<img src="{{user.profile.dep19.url}}">
+	<img src="{{user.profile.dep20.url}}">
+
+	<img src="{{user.profile.dep21.url}}">
+	<img src="{{user.profile.dep22.url}}">
+	<img src="{{user.profile.dep23.url}}">
+	<img src="{{user.profile.dep24.url}}">
+</div>
+<div class="container-article">
+	<img src="{{user.profile.dep25.url}}">
+	<img src="{{user.profile.dep26.url}}">
+	<img src="{{user.profile.dep27.url}}">
+	<img src="{{user.profile.dep28.url}}">
+
+	<img src="{{user.profile.dep29.url}}">
+	<img src="{{user.profile.dep30.url}}">
+	<img src="{{user.profile.dep31.url}}">
+	<img src="{{user.profile.dep32.url}}">
+</div>
+</div>
+<!-- block super -->
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'social/layout.html'%}
+{% load static %}
+{% block content %}
+<div class="container-article">
+{% for r in premios %}
+    <img src="/media/{{r}}">
+{% endfor %}
+</div>
+{% endblock %}

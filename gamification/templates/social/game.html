@@ -1,0 +1,506 @@
+{% extends 'social/layout.html' %}
+{% load static %}
+{% block content %}
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'app.js' %}" defer></script>
+
+
+
+<div id="C1" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Amazonas" style="position: relative;display: block;" style="left: 230px;" src="/media/AMAZONAS.jpg">
+        <img  id="Amazonas1" src="/media/Amazonas1.jpg">
+        <img  id="Amazonas2" src="/media/Amazonas2.jpg">
+        <img  id="Amazonas3" src="/media/Amazonas3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Amazonas" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Amazonas" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Amazonas" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Amazonas" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C2" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Antioquia" style="position: relative;display: block;" style="left: 230px;" src="/media/ANTIOQUIA.jpg">
+        <img  id="Antioquia1" src="/media/Antioquia1.jpg">
+        <img  id="Antioquia2" src="/media/Antioquia2.jpg">
+        <img  id="Antioquia3" src="/media/Antioquia3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Antioquia" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Antioquia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Antioquia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Antioquia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C3" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Arauca" style="position: relative;display: block;" style="left: 230px;" src="/media/ARAUCA.jpg">
+        <img  id="Arauca1" src="/media/Arauca1.jpg">
+        <img  id="Arauca2" src="/media/Arauca2.jpg">
+        <img  id="Arauca3" src="/media/Arauca3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Arauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Arauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Arauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Arauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C4" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Atlantico" style="position: relative;display: block;" style="left: 230px;" src="/media/ATLÁNTICO.jpg">
+        <img  id="Atlantico1" src="/media/Atlantico1.jpg">
+        <img  id="Atlantico2" src="/media/Atlantico2.jpg">
+        <img  id="Atlantico3" src="/media/Atlantico3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Atlantico" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Atlantico" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Atlantico" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Atlantico" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C5" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Bolivar" style="position: relative;display: block;" style="left: 230px;" src="/media/BOLÍVAR.jpg">
+        <img  id="Bolivar1" src="/media/Bolivar1.jpg">
+        <img  id="Bolivar2" src="/media/Bolivar2.jpg">
+        <img  id="Bolivar3" src="/media/Bolivar3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Bolivar" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Bolivar" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Bolivar" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Bolivar" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+<div id="C6" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Boyaca" style="position: relative;display: block;" style="left: 230px;" src="/media/BOYACÁ.jpg">
+        <img  id="Boyaca1" src="/media/Boyaca1.jpg">
+        <img  id="Boyaca2" src="/media/Boyaca2.jpg">
+        <img  id="Boyaca3" src="/media/Boyaca3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Boyaca" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Boyaca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Boyaca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Boyaca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C7" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Caldas" style="position: relative;display: block;" style="left: 230px;" src="/media/CALDAS.jpg">
+        <img  id="Caldas1" src="/media/Caldas1.jpg">
+        <img  id="Caldas2" src="/media/Caldas2.jpg">
+        <img  id="Caldas3" src="/media/Caldas3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Caldas" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Caldas" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Caldas" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Caldas" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C8" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Caqueta" style="position: relative;display: block;" style="left: 230px;" src="/media/CAQUETÁ.jpg">
+        <img  id="Caqueta1" src="/media/Caqueta1.jpg">
+        <img  id="Caqueta2" src="/media/Caqueta2.jpg">
+        <img  id="Caqueta3" src="/media/Caqueta3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Caqueta" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Caqueta" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Caqueta" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Caqueta" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C9" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Casanare" style="position: relative;display: block;" style="left: 230px;" src="/media/CASANARE.jpg">
+        <img  id="Casanare1" src="/media/Casanare1.jpg">
+        <img  id="Casanare2" src="/media/Casanare2.jpg">
+        <img  id="Casanare3" src="/media/Casanare3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Casanare" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Casanare" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Casanare" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Casanare" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C10" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Cauca" style="position: relative;display: block;" style="left: 230px;" src="/media/CAUCA.jpg">
+        <img  id="Cauca1" src="/media/Cauca1.jpg">
+        <img  id="Cauca2" src="/media/Cauca2.jpg">
+        <img  id="Cauca3" src="/media/Cauca3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Cauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Cauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Cauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Cauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C11" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Cesar" style="position: relative;display: block;" style="left: 230px;" src="/media/CESAR.jpg">
+        <img  id="Cesar1" src="/media/Cesar1.jpg">
+        <img  id="Cesar2" src="/media/Cesar2.jpg">
+        <img  id="Cesar3" src="/media/Cesar3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Cesar" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Cesar" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Cesar" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Cesar" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C12" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Choco" style="position: relative;display: block;" style="left: 230px;" src="/media/CHOCÓ.jpg">
+        <img  id="Choco1" src="/media/Choco1.jpeg">
+        <img  id="Choco2" src="/media/Choco2.jpg">
+        <img  id="Choco3" src="/media/Choco3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Choco" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Choco" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Choco" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Choco" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C13" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Cordoba" style="position: relative;display: block;" style="left: 230px;" src="/media/CORDOBA.jpg">
+        <img  id="Cordoba1" src="/media/Cordoba1.jpg">
+        <img  id="Cordoba2" src="/media/Cordoba2.jpg">
+        <img  id="Cordoba3" src="/media/Cordoba3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Cordoba" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Cordoba" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Cordoba" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Cordoba" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C14" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Cundinamarca" style="position: relative;display: block;" style="left: 230px;" src="/media/CUNDINAMARCA.jpg">
+        <img  id="Cundinamarca1" src="/media/Cundinamarca1.jpg">
+        <img  id="Cundinamarca2" src="/media/Cundinamarca2.jpg">
+        <img  id="Cundinamarca3" src="/media/Cundinamarca3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Cundinamarca" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Cundinamarca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Cundinamarca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Cundinamarca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C15" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Guainia" style="position: relative;display: block;" style="left: 230px;" src="/media/GUAINÍA.jpg">
+        <img  id="Guainia1" src="/media/Guainia1.jpg">
+        <img  id="Guainia2" src="/media/Guainia2.jpg">
+        <img  id="Guainia3" src="/media/Guainia3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Guainia" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Guainia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Guainia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Guainia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C16" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Guaviare" style="position: relative;display: block;" style="left: 230px;" src="/media/GUAVIARE.jpg">
+        <img  id="Guaviare1" src="/media/Guaviare1.jpg">
+        <img  id="Guaviare2" src="/media/Guaviare2.jpg">
+        <img  id="Guaviare3" src="/media/Guaviare3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Guaviare" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Guaviare" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Guaviare" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Guaviare" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C17" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Huila" style="position: relative;display: block;" style="left: 230px;" src="/media/HUILA.jpg">
+        <img  id="Huila1" src="/media/Huila1.jpg">
+        <img  id="Huila2" src="/media/Huila2.jpg">
+        <img  id="Huila3" src="/media/Huila3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Huila" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Huila" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Huila" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Huila" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C18" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="LaGuajira" style="position: relative;display: block;" style="left: 230px;" src="/media/LA-GUAJIRA.jpg">
+        <img  id="LaGuajira1" src="/media/La Guajira1.jpg">
+        <img  id="LaGuajira2" src="/media/La Guajira2.jpg">
+        <img  id="LaGuajira3" src="/media/La Guajira3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="LaGuajira" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="LaGuajira" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="LaGuajira" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="LaGuajira" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C19" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Magdalena" style="position: relative;display: block;" style="left: 230px;" src="/media/MAGDALENA.jpg">
+        <img  id="Magdalena1" src="/media/Magdalena1.jpg">
+        <img  id="Magdalena2" src="/media/Magdalena2.jpg">
+        <img  id="Magdalena3" src="/media/Magdalena3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Magdalena" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Magdalena" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Magdalena" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Magdalena" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C20" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Meta" style="position: relative;display: block;" style="left: 230px;" src="/media/META.jpg">
+        <img  id="Meta1" src="/media/Meta1.jpg">
+        <img  id="Meta2" src="/media/Meta2.jpg">
+        <img  id="Meta3" src="/media/Meta3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Meta" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Meta" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Meta" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Meta" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C21" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Nariño" style="position: relative;display: block;" style="left: 230px;" src="/media/NARIÑO.jpg">
+        <img  id="Nariño1" src="/media/Nariño1.jpg">
+        <img  id="Nariño2" src="/media/Nariño2.jpg">
+        <img  id="Nariño3" src="/media/Nariño3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Nariño" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Nariño" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Nariño" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Nariño" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C22" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="NorteDeSantander" style="position: relative;display: block;" style="left: 230px;" src="/media/NORTE-DE-SANTANDER.jpg">
+        <img  id="NorteDeSantander1" src="/media/Norte de Santander1.jpg">
+        <img  id="NorteDeSantander2" src="/media/Norte de Santander2.jpg">
+        <img  id="NorteDeSantander3" src="/media/Norte de Santander3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="NorteDeSantander" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="NorteDeSantander" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="NorteDeSantander" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="NorteDeSantander" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C23" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Putumayo" style="position: relative;display: block;" style="left: 230px;" src="/media/putumayo-colombia-mudo.jpg">
+        <img  id="Putumayo1" src="/media/Putumayo1.jpg">
+        <img  id="Putumayo2" src="/media/Putumayo2.jpg">
+        <img  id="Putumayo3" src="/media/Putumayo3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Putumayo" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Putumayo" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Putumayo" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Putumayo" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C24" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Quindio" style="position: relative;display: block;" style="left: 230px;" src="/media/QUINDIO.jpg">
+        <img  id="Quindio1" src="/media/Quindio1.jpg">
+        <img  id="Quindio2" src="/media/Quindio2.jpg">
+        <img  id="Quindio3" src="/media/Quindio3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Quindio" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Quindio" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Quindio" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Quindio" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C25" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Risaralda" style="position: relative;display: block;" style="left: 230px;" src="/media/RISARALDA.jpg">
+        <img  id="Risaralda1" src="/media/Risaralda1.jpg">
+        <img  id="Risaralda2" src="/media/Risaralda2.jpg">
+        <img  id="Risaralda3" src="/media/Risaralda3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Risaralda" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Risaralda" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Risaralda" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Risaralda" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C26" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="SanAndresYProvidencia" style="position: relative;display: block;" style="left: 230px;" src="/media/SAN-ANDRÉS-Y-PROVIDENCIA.jpg">
+        <img  id="SanAndresYProvidencia1" src="/media/San Andres1.jpg">
+        <img  id="SanAndresYProvidencia2" src="/media/San Andres2.jpg">
+        <img  id="SanAndresYProvidencia3" src="/media/San Andres3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="SanAndresYProvidencia" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="SanAndresYProvidencia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="SanAndresYProvidencia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="SanAndresYProvidencia" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C27" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Santander" style="position: relative;display: block;" style="left: 230px;" src="/media/SANTANDER.jpg">
+        <img  id="Santander1" src="/media/Santander1.jpg">
+        <img  id="Santander2" src="/media/Santander2.jpg">
+        <img  id="Santander3" src="/media/Santander3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Santander" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Santander" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Santander" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Santander" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C28" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Sucre" style="position: relative;display: block;" style="left: 230px;" src="/media/SUCRE.jpg">
+        <img  id="Sucre1" src="/media/Sucre1.jpg">
+        <img  id="Sucre2" src="/media/Sucre2.jpg">
+        <img  id="Sucre3" src="/media/Sucre3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Sucre" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Sucre" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Sucre" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Sucre" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C29" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Tolima" style="position: relative;display: block;" style="left: 230px;" src="/media/TOLIMA.jpg">
+        <img  id="Tolima1" src="/media/Tolima1.jpg">
+        <img  id="Tolima2" src="/media/Tolima2.jpg">
+        <img  id="Tolima3" src="/media/Tolima3.png">
+    </div>
+    <div>
+        <button id="btn1" data-name="Tolima" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Tolima" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Tolima" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Tolima" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C30" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="ValleDelCauca" style="position: relative;display: block;" style="left: 230px;" src="/media/VALLE-DEL-CAUCA.jpg">
+        <img  id="ValleDelCauca1" src="/media/Valle del Cauca1.jpg">
+        <img  id="ValleDelCauca2" src="/media/Valle del Cauca2.jpg">
+        <img  id="ValleDelCauca3" src="/media/Valle del Cauca3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="ValleDelCauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="ValleDelCauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="ValleDelCauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="ValleDelCauca" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C31" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Vaupes" style="position: relative;display: block;" style="left: 230px;" src="/media/VAUPÉS.jpg">
+        <img  id="Vaupes1" src="/media/Vaupes1.jpg">
+        <img  id="Vaupes2" src="/media/Vaupes2.jpg">
+        <img  id="Vaupes3" src="/media/Vaupes3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Vaupes" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Vaupes" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Vaupes" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Vaupes" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+<div id="C32" style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="img-container">
+        <img  id="Vichada" style="position: relative;display: block;" style="left: 230px;" src="/media/VICHADA.jpg">
+        <img  id="Vichada1" src="/media/Vichada1.jpg">
+        <img  id="Vichada2" src="/media/Vichada2.jpg">
+        <img  id="Vichada3" src="/media/Vichada3.jpg">
+    </div>
+    <div>
+        <button id="btn1" data-name="Vichada" type="button" class="btn btn-info" onclick="capturaBoton(this)">1</button>
+        <button id="btn2" data-name="Vichada" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn3" data-name="Vichada" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+        <button id="btn4" data-name="Vichada" type="button" class="btn btn-info" onclick="capturaBoton(this)">$200</button>
+    </div>
+</div>
+
+
+
+
+<div id="textContainer"style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
+    <div class="container-image">
+        <h1>TEXTOOOOOOOOOOOOO</h1>
+        <div>Intentos: <div id="IN">3</div></div>
+        <div>Aciertos seguidos</div><div id ="AS"> 0 </div>
+        {% if saldo %}
+        <div ><div id="saldo" >{{ saldo }}</div></div>
+        {% endif %}
+        <p><input id="textField" type="text" name="apellido" id="text"><button id="go" type="button" class="btn btn-info">GO</button></p>
+    </div>
+    <div id="AC"><h1>ACERTASTE</h1></div>
+</div>
+
+
+<div><a id="LS" class="row" style="display: none;" href="1/{{saldo}}/{{ saldo }}">Buena pelea -> Siguiente-></a> 
+{% endblock %}
