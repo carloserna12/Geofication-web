@@ -58,7 +58,7 @@ def finalView(request,saldo,saldo2):
     saldo = perfilMio.saldo
     print(saldo2)
     
-    listaPremios = [saldo2]
+    listaPremios = []
     for i in range(saldo2+1):
         if i == 1:
             if perfilMio.dep1 != "Silueta Insignias.png":

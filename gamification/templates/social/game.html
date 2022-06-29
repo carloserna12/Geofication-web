@@ -490,13 +490,16 @@
 
 <div id="textContainer"style="background-color: #fafafa;border: 2px solid #ccc;padding: 0 3rem;margin: 1rem;">
     <div class="container-image">
-        <h1>TEXTOOOOOOOOOOOOO</h1>
-        <div>Intentos: <div id="IN">3</div></div>
-        <div>Aciertos seguidos</div><div id ="AS"> 0 </div>
+        <div class="container-article">
+        <div style="margin: 35px;">Intentos: <div id="IN">3</div></div>
+        <div style="margin: 35px;">Aciertos seguidos<div id ="AS"> 0 </div></div>
         {% if saldo %}
-        <div ><div id="saldo" >{{ saldo }}</div></div>
+        <div style="margin: 35px;">saldo:<div id="saldo" >{{ saldo }}</div></div>
         {% endif %}
-        <p><input id="textField" type="text" name="apellido" id="text"><button id="go" type="button" class="btn btn-info">GO</button></p>
+        </div>
+        <p><input id="textField" type="text" name="apellido" placeholder="Escribe el departamento" id="text"><button id="go" type="button" class="btn btn-info">GO</button></p>
+            
+        
     </div>
     <div id="AC"><h1>ACERTASTE</h1></div>
 </div>

@@ -2,8 +2,14 @@
 {% load static %}
 {% block content %}
 <div class="container-article">
+    <div><h1>Felicidades Acumulaste: ${{saldo}}</h1></div>
+</div> 
+<div class="container-article">
 {% for r in premios %}
+
+    <div>medalla desbloqueada</div>
     <img src="/media/{{r}}">
+
 {% endfor %}
 </div>
 {% endblock %}
